@@ -10,20 +10,15 @@ public class Question7 {
 		int leftStar=1;
 		int rightStar=1;
 		int nsp=3;
-		
 		while(row<=5) {
-			
 			// work
 			if(row==1 || row==5) {
-				
 				int i=1;
 				while(i<=5) {
 					System.out.print("*"+" ");
 					i=i+1;
 				}
-				
 			}else {
-				
 				// leftStar
 				int i=1;
 				while(i<=leftStar) {
