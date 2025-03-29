@@ -27,7 +27,7 @@ public class ArrayListDemo {
 		System.out.println(b);
 		
 		int c=14;
-		Integer d=c;
+		Integer d=c; // AutoBoxing
 		
 		System.out.println(d);
 		
