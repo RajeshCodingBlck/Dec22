@@ -20,7 +20,7 @@ public class sumOfNaturalNumber {
 		// TODO Auto-generated method stub
 		
 	   long start= System.nanoTime();
-	   int ans= sum(100);
+	   int ans= sum(5);
        System.out.println(ans);
        long end= System.nanoTime();
        System.out.println(end-start);
