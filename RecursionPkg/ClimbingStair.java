@@ -5,18 +5,18 @@ public class ClimbingStair {
 	static int count=0;
 	public static int  getPath(int n, String ans) {
 		
-		if(n==0) {
-			System.out.println(ans);
-			count++;
-			return 1;
-		}
+//		if(n==0) {
+//			System.out.println(ans);
+//			count++;
+//			return 1;
+//		}
 //		if(n==1) {
 //			System.out.println(ans+"1");
 //			return;
 //		}
-		if(n<0) {
-			return 0;
-		}
+//		if(n<0) {
+//			return 0;
+//		}
 		
 		// 1 Ka kump
 		int ans1=getPath(n-1,"1"+ans);
