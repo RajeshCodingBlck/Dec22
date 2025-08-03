@@ -1,5 +1,6 @@
 package TreePackage;
 
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Tree {
@@ -19,6 +20,35 @@ public class Tree {
 		System.out.println();
 		System.out.println("PostOrder ................");
 		postOrder(root);
+		
+		System.out.println();
+		System.out.println("Level Order Traversal ................");
+		BFS(root);
+	}
+	
+	
+	
+	public void BFS(TreeNode root) {
+		
+		LinkedList<TreeNode> q= new LinkedList();
+		
+		q.addLast(root);
+		while(q.size()>0) {
+			
+			// remove the Node
+			TreeNode rm=q.removeFirst();
+			// work for the Node
+			System.out.print(rm.data+ " ");
+			
+			// add their children
+			if(rm.left !=null) {
+				q.addLast(rm.left);
+			}
+			
+			if(rm.right !=null) {
+				q.addLast(rm.right);
+			}
+		}
 	}
 	
 	
